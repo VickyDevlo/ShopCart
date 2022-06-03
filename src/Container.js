@@ -4,7 +4,6 @@ import Navbar from "./Components/Navbar/Navbar";
 import ProductsList from "./Components/ProductsList/ProductsList";
 
 const Container = () => {
-
   const [show, setShow] = useState(true);
   const [cart, setCart] = useState([]);
 

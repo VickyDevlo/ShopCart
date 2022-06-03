@@ -1,9 +1,10 @@
 import React from "react";
-import { Button } from '@material-ui/core'
+import { Button } from "@material-ui/core";
 
 const Cards = ({ items, handlerClick }) => {
-  const { title, color, price, img } = items;  
- 
+  
+  const { title, color, price, img } = items;
+
   return (
     <div className="cards">
       <div className="image_box">
@@ -13,7 +14,13 @@ const Cards = ({ items, handlerClick }) => {
         <p>{title}</p>
         <p>{color}</p>
         <p>Price - {price} Rs.</p>
-        <Button onClick={() => handlerClick(items)} color='secondary' variant="contained">Add to Cart</Button>
+        <Button
+          onClick={() => handlerClick(items)}
+          color="secondary"
+          variant="contained"
+        >
+          Add to Cart
+        </Button>
       </div>
     </div>
   );
