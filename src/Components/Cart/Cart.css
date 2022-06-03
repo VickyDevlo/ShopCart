@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Mulish;
+}
+
+.Wrapper {
+  width: 70%;
+  margin: auto;
+}
+
+.cart_box img {
+  width: 100px;
+  height: 100px;
+}
+.cart_img {
+  display: flex;
+  width: 350px;
+}
+
+.cart_img p {
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.cart_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  border-bottom: 1px solid rgb(206, 208, 209);
+  padding-bottom: 5px;
+}
+
+.cart_box div:nth-child(2) button {
+  padding: 5px 10px;
+  background-color: transparent;
+  border: 1px solid rgb(231, 231, 231);
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.cart_box div:nth-child(3) button {
+  padding: 5px 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #c00;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cart_box div:nth-child(3) span {
+  background-color: transparent;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.total {
+  display: flex;
+  justify-content: end;
+}
+.total span:nth-child(1) {
+  font-size: 1.7rem;
+  position: relative;
+  top:10px;
+  right: 150px;
+  color: crimson;
+  text-decoration: underline;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+.total span:nth-child(2) {
+  font-size: 1.7rem;
+  margin-top:10px;
+  color: crimson;
+  font-weight: bold;
+  position: absolute;
+}
+
+.CheckOutBtn {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  letter-spacing: 1.5px;
+  border-radius: 5px;
+  position: relative;
+  top: 60px;  
+  left: -50px;
+  cursor: pointer;
+  font-size: 20px;
+  padding: 10px;
+}
+.CheckOutBtn:hover {
+  background-color: transparent;
+  color: black;
+  border: 1px solid black;
+}
+ 

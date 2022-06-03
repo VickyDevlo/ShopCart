@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect, useState } from "react";
+import Cart from './Components/Cart/Cart'
+import Navbar from './Components/Navbar/Navbar'
+import ProductsList from "./Components/ProductsList/ProductsList";
 
-function App() {
+const App = () => {
+
+  const [show, setShow] = useState(true);
+  const [cart, setCart] = useState([]);
+  
+
+  const handleClick = (item) => {
+    if (cart.indexOf(item) !== -1) return;
+    setCart([...cart, item]);
+  };
+
+  useEffect(() => {
+    let data = window.localStorage.getItem("cart");
+    setCart(JSON.parse(data));
+  }, [setCart]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar setShow={setShow} size={cart.length} />
+      
+      {show ? (
+        <ProductsList handleClick={handleClick} />
+      ) : (
+        <Cart cart={cart} setCart={setCart} />
+      )}
+    </>
   );
-}
+};
 
 export default App;
