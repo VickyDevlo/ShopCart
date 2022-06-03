@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Delete } from "@material-ui/icons";
 import "./Cart.css";
- 
 
 const Cart = ({ cart, setCart }) => {
   const [price, setPrice] = useState(0);
@@ -67,27 +66,26 @@ const Cart = ({ cart, setCart }) => {
         </div>
       ))}
 
-      {
-        price ? (  
-          <div className="total">
-            <span>Order Total:</span> 
-            <span>Rs- {price}.00</span>
-            <>
-              <button className="CheckoutBtn">Checkout</button>
-              <button className="CheckoutBtn" onClick={DeleteAllHandler}>
-                Clear All
-              </button>
-            </>
-          </div>
-        ) :
-        (
+      {price ? (
+        <div className="total">
+          <span>Order Total:</span>
+          <span>Rs- {price}.00</span>
+          <>
+            {/* <button className="CheckoutBtn">Checkout</button> */}
+            <button className="CheckoutBtn" onClick={DeleteAllHandler}>
+              Clear All
+            </button>
+          </>
+        </div>
+      ) : (
+        <>
           <img
-              src="https://www.apnashopping.in/assets/img/payment/Empty-Cart.jpg"
-              alt="emptycart"
-              className="EmptyCart"
+            src="https://www.apnashopping.in/assets/img/payment/Empty-Cart.jpg"
+            alt="emptycart_img"
+            className="EmptyCart"
           />
-        )
-      }
+        </>
+      )}
     </div>
   );
 };

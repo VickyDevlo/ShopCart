@@ -10,7 +10,7 @@ const Navbar = ({ setShow, size }) => {
           Products
         </span>
         <div className="cart" onClick={() => setShow(false)}>
-          <span>
+          <span >
             <ShoppingCartOutlined />
           </span>
           <span>{size}</span>

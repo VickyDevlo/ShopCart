@@ -1,10 +1,12 @@
 import React, { useEffect, useState } from "react";
+import { Route, Routes } from "react-router-dom";
 import Cart from "./Components/Cart/Cart";
 import Navbar from "./Components/Navbar/Navbar";
 import ProductsList from "./Components/ProductsList/ProductsList";
 
 const Container = () => {
   const [show, setShow] = useState(true);
+
   const [cart, setCart] = useState([]);
 
   //Productlist Handler
