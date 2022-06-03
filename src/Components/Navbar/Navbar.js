@@ -1,22 +1,20 @@
 import React from "react";
-import './Navbar.css'
-import {ShoppingCartOutlined} from '@material-ui/icons';
- 
-const Navbar = ({ setShow, size }) => {
+import "./Navbar.css";
+import { ShoppingCartOutlined } from "@material-ui/icons";
 
+const Navbar = ({ setShow, size }) => {
   return (
     <nav>
       <div className="nav_box">
         <span className="my_shop" onClick={() => setShow(true)}>
-         Products
+          Products
         </span>
         <div className="cart" onClick={() => setShow(false)}>
           <span>
-            <ShoppingCartOutlined/>
+            <ShoppingCartOutlined />
           </span>
           <span>{size}</span>
         </div>
-   
       </div>
     </nav>
   );
