@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { Delete } from "@material-ui/icons";
-import './Cart.css'
+import "./Cart.css";
 
 const Cart = ({ cart, setCart }) => {
   const [price, setPrice] = useState(0);
-
 
   useEffect(() => {
     handlePrice();
@@ -18,6 +17,7 @@ const Cart = ({ cart, setCart }) => {
     const products = cart.filter((item) => item.id !== id);
     setCart(products);
     handlePrice();
+    alert("Product Removed");
   };
 
   const handlePrice = () => {
@@ -39,26 +39,27 @@ const Cart = ({ cart, setCart }) => {
 
   return (
     <div className="Wrapper">
-      {cart.map((item, Index) => (
-        <div className="cart_box" key={Index}>
-          <div className="cart_img">
-            <img src={item.img} alt="product_img" />
-            <p>{item.title}</p>
+      {
+        cart.map((item, Index) => (
+          <div className="cart_box" key={Index}>
+            <div className="cart_img">
+              <img src={item.img} alt="product_img" />
+              <p>{item.title}</p>
+            </div>
+            <div>
+              <button onClick={() => handleChange(item, -1)}>-</button>
+              <button>{item.amount}</button>
+              <button onClick={() => handleChange(item, 1)}>+</button>
+            </div>
+            <div>
+              <span>{item.price}</span>
+              <button onClick={() => handleRemove(item.id)}>
+                <Delete />
+              </button>
+            </div>
           </div>
-          <div>
-            <button onClick={() => handleChange(item, -1)}>-</button>
-            <button>{item.amount}</button>
-            <button onClick={() => handleChange(item, 1)}>+</button>
-          </div>
-          <div>
-            <span>{item.price}</span>
-            <button onClick={() => handleRemove(item.id)}>
-            
-              <Delete /> 
-            </button>
-          </div>
-        </div>
-      ))}
+        ))
+      }
       <div className="total">
         <span>Order Total:</span>
         <span>Rs- {price}.00</span>
