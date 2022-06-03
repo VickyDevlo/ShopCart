@@ -10,6 +10,7 @@
 .Wrapper {
   width: 70%;
   margin: auto;
+  height: fit-content;
 }
 
 .cart_box img {
@@ -84,22 +85,24 @@
   position: absolute;
 }
 
-.CheckOutBtn {
+.CheckoutBtn {
+  margin: 5px;
   background-color: black;
   border: 1px solid black;
   color: white;
   letter-spacing: 1.5px;
-  border-radius: 5px;
+  border-radius:  5px;
   position: relative;
   top: 60px;  
   left: -50px;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 14px;
   padding: 10px;
+  transition: 0.5s;
 }
-.CheckOutBtn:hover {
-  background-color: transparent;
-  color: black;
-  border: 1px solid black;
+.CheckoutBtn:hover {
+  background-color: rgb(59, 59, 59);
+  
+  border: 1px solid black; 
 }
  

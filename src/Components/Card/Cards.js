@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from '@material-ui/core'
 
-const Cards = ({ items, handleClick }) => {
+const Cards = ({ items, handlerClick }) => {
   const { title, color, price, img } = items;  
  
   return (
@@ -13,7 +13,7 @@ const Cards = ({ items, handleClick }) => {
         <p>{title}</p>
         <p>{color}</p>
         <p>Price - {price} Rs.</p>
-        <Button onClick={() => handleClick(items)} color='secondary' variant="contained">Add to Cart</Button>
+        <Button onClick={() => handlerClick(items)} color='secondary' variant="contained">Add to Cart</Button>
       </div>
     </div>
   );

@@ -1,18 +1,18 @@
-import React  from "react";
+import React from "react";
 import Cards from "../Card/Cards";
 import "./ProductsList.css";
-import Products from '../Products/Products'
+import Products from "../Products/Products";
 
-const ProductsList = ({ handleClick }) => { 
-   
+const ProductsList = ({handlerClick}) => {
   return (
     <section>
-      {Products.map((items) => (  
-        <Cards key={items.id} items={items} handleClick={handleClick} />
-        )
-        )
-      }
-      
+      {Products.map((items) => (
+        <Cards 
+          key={items.id}
+          items={items} 
+          handlerClick={handlerClick}
+        />
+      ))}
     </section>
   );
 };

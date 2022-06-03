@@ -1,34 +1,35 @@
 import React, { useEffect, useState } from "react";
-import Cart from './Components/Cart/Cart'
-import Navbar from './Components/Navbar/Navbar'
+import Cart from "./Components/Cart/Cart";
+import Navbar from "./Components/Navbar/Navbar";
 import ProductsList from "./Components/ProductsList/ProductsList";
 
-const App = () => {
+const Container = () => {
 
   const [show, setShow] = useState(true);
   const [cart, setCart] = useState([]);
-  
-  const handleClick = (item) => {
+
+  //Productlist Handler
+  const handlerClick = (item) => {
     if (cart.indexOf(item) !== -1) return;
     setCart([...cart, item]);
   };
 
   useEffect(() => {
-    let data = window.localStorage.getItem("cart");
+    let data = localStorage.getItem("cart");
     setCart(JSON.parse(data));
   }, [setCart]);
 
   return (
-    <>
+    <div>
       <Navbar setShow={setShow} size={cart.length} />
-      
+
       {show ? (
-        <ProductsList handleClick={handleClick} />
+        <ProductsList handlerClick={handlerClick} />
       ) : (
         <Cart cart={cart} setCart={setCart} />
       )}
-    </>
+    </div>
   );
 };
 
-export default App;
+export default Container;
