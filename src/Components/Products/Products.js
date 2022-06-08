@@ -2,15 +2,15 @@ const Products = [
   {
     id: 1,
     title: "ASIAN Men's Wonder-13 Sports Running Shoes",
-    color: "Grey",
-    price: 498.0,
+    color: " Grey ",
+    price: 498,
     img: "https://m.media-amazon.com/images/I/616zTSviLpL._UY500_.jpg",
     amount: 1,
   },
   {
     id: 2,
     title: "Echo Dot (3rd Gen) smart speaker with Alexa",
-    color: "Black",
+    color: " Black ",
     price: 3499,
     img: "https://m.media-amazon.com/images/I/61EXU8BuGZL._SL1100_.jpg",
     amount: 1,
@@ -18,7 +18,7 @@ const Products = [
   {
     id: 3,
     title: "Redux Analog Linear Designer Dial Watch",
-    color: "D Black",
+    color: " D Black ",
     price: 315,
     img: "https://m.media-amazon.com/images/I/81lxfvbme5L._UY500_.jpg",
     amount: 1,
@@ -26,7 +26,7 @@ const Products = [
   {
     id: 4,
     title: "Lava Z3 (3GB RAM, 32GB Storage)",
-    color: "Striped Blue",
+    color: " Striped Blue ",
     price: 7499,
     img: "https://images-eu.ssl-images-amazon.com/images/I/41jnUjGh4PL._SX300_SY300_QL70_FMwebp_.jpg",
     amount: 1,
@@ -34,7 +34,7 @@ const Products = [
   {
     id: 5,
     title: "Fastrack Men Pilot Sunglasses",
-    color: "Black Frame Brown Lens",
+    color: " Black Frame Brown Lens ",
     price: 575,
     img: "https://m.media-amazon.com/images/I/61U55pAAebL._UX679_.jpg",
     amount: 1,
@@ -42,7 +42,7 @@ const Products = [
   {
     id: 6,
     title: "Fentacia Men Slipper Sandals(UK6-UK14)",
-    color: "Brown",
+    color: " Brown ",
     price: 549,
     img: "https://m.media-amazon.com/images/I/71Vnern4daL._UY675_.jpg",
     amount: 1,
@@ -50,7 +50,7 @@ const Products = [
   {
     id: 7,
     title: "Lenovo Tab M8 HD 2nd Gen",
-    color: " Iron Grey",
+    color: " Iron Grey " ,
     price: 10460,
     img: "https://m.media-amazon.com/images/I/71WFkiiL5CS._SX679_.jpg",
     amount: 1,
@@ -58,7 +58,7 @@ const Products = [
   {
     id: 8,
     title: "realme Buds Wireless Neo Bluetooth Earphones",
-    color: "Blue",
+    color: " Blue ",
     price: 1499,
     img: "https://m.media-amazon.com/images/I/61UtY2UWYYS._SY450_.jpg",
     amount: 1,
@@ -66,7 +66,7 @@ const Products = [
   {
     id: 9,
     title: "Vaamsi Women's Georgette Printed Saree",
-    color: "Black",
+    color: " Black ",
     price: 350,
     img: "https://m.media-amazon.com/images/I/71BwwiUAsLL._UY741_.jpg",
     amount: 1,
@@ -74,7 +74,7 @@ const Products = [
   {
     id: 10,
     title: "Dell Vostro 3400 Laptop, 4GB, 1TB + 256GB",
-    color: "Dune",
+    color: " Dune ",
     price: 48450,
     img: "https://m.media-amazon.com/images/I/61HCEPIeOmL._SX679_.jpg",
     amount: 1,
@@ -82,7 +82,7 @@ const Products = [
   {
     id: 11,
     title: "Bajaj PMH 25 DLX 24L Personal Air Cooler ",
-    color: "White",
+    color: " White ",
     price: 4800,
     img: "https://m.media-amazon.com/images/I/51fNNMznBML._SX569_.jpg",
     amount: 1,
@@ -90,7 +90,7 @@ const Products = [
   {
     id: 12,
     title: "ADISA Laptop Backpack 31 Ltrs",
-    color: "navy blue",
+    color: " navy blue ",
     price: 599,
     img: "https://m.media-amazon.com/images/I/6175Nru3TXL._UX569_.jpg",
     amount: 1,

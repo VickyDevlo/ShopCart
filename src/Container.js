@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Route, Routes } from "react-router-dom";
 import Cart from "./Components/Cart/Cart";
 import Navbar from "./Components/Navbar/Navbar";
 import ProductsList from "./Components/ProductsList/ProductsList";

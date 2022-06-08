@@ -78,13 +78,13 @@ const Cart = ({ cart, setCart }) => {
           </>
         </div>
       ) : (
-        <>
+        <div  className="EmptyCart">
           <img
             src="https://www.apnashopping.in/assets/img/payment/Empty-Cart.jpg"
             alt="emptycart_img"
-            className="EmptyCart"
+           
           />
-        </>
+        </div>
       )}
     </div>
   );

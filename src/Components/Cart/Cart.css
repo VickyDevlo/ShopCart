@@ -25,7 +25,6 @@
   font-weight: bold;
   margin-left: 10px;
 }
-
 .cart_box {
   display: flex;
   align-items: center;
@@ -64,7 +63,7 @@
 
 .total {
   display: flex;
-  justify-content: end;
+  justify-content: right;
 }
 
 .total span:nth-child(1) {
@@ -106,10 +105,13 @@
   background-color: rgb(59, 59, 59);
   border: 1px solid black;
 }
-
-.EmptyCart {
+.EmptyCart{
+  margin-top: 80px;
+  
+}
+ 
+.EmptyCart img{
   width: 100%;
   height: auto;
-  margin: 15px;
   text-align: center;
 }
