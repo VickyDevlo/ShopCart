@@ -8,7 +8,6 @@
 .Wrapper {
   width: 70%;
   margin: auto;
-  height: fit-content;
 }
 
 .cart_box img {
@@ -70,7 +69,7 @@
   font-size: 1.7rem;
   position: relative;
   top: 10px;
-  right: 150px;
+  right:-200px;
   color: crimson;
   text-decoration: underline;
   font-weight: bold;
@@ -80,34 +79,36 @@
 .total span:nth-child(2) {
   font-size: 1.7rem;
   margin-top: 10px;
-  color: crimson;
+  margin-left: 850px;
+  color: black;
   font-weight: bold;
   position: absolute;
 }
 
-.CheckoutBtn {
-  margin: 5px;
+.total .Btn {
+  margin: 10px;
   background-color: black;
   border: 1px solid black;
   color: white;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.8px;
   border-radius: 5px;
   position: relative;
-  top: 60px;
-  left: -50px;
+  top: 80px;
+  left:20px;
   cursor: pointer;
   font-size: 14px;
   padding: 10px;
   transition: 0.5s;
+  width: 200px;
+ 
 }
 
-.CheckoutBtn:hover {
+.Btn:hover {
   background-color: rgb(59, 59, 59);
   border: 1px solid black;
 }
 .EmptyCart{
   margin-top: 80px;
-  
 }
  
 .EmptyCart img{
